@@ -1,0 +1,34 @@
+@use "toolkit/_toolbox"
+
+.button
+    display: inline-block
+    padding: 1rem
+    border-radius: .5rem
+    font-weight: $font-medium
+    color: $button-color
+    background-color: $first-color
+
+.button:hover
+    background-color: $first-color-alt
+    transition: .3s
+
+.button-icon
+    margin-left: $mb-0-5
+    font-size: 1.25rem
+    transition: .3s
+
+.button--flex
+    display: inline-flex
+    align-items: center
+
+.button--small
+    padding: .75rem 1rem
+
+.button--link
+    padding: 0
+    background-color: transparent
+    color: $first-color
+
+.button--link:hover
+    background-color: transparent
+    color: $first-color-alt
