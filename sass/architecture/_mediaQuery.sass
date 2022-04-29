@@ -1,0 +1,186 @@
+@use "toolkit/_toolbox"
+
+//Small Devices//
+@media (max-width: $breakpoint-mobile)
+    .container
+        margin-left: $mb-1
+        margin-right: $mb-1
+
+    .nav__menu
+        padding: 2rem .25rem 4rem!important
+
+    .home__content
+        grid-template-columns: .25fr 3fr!important
+
+    .home__blob
+        width: 180px!important
+
+    .section__title
+        font-size: $normal-font-size
+
+    .qualification__data
+        gap: .5rem
+
+    .services__container
+        grid-template-columns: max-content!important
+        justify-content: center!important
+
+    .services__content
+        padding-right: 3.5rem!important
+
+    .services__modal
+        padding: 0 .5rem!important
+
+
+//Medium Devices//
+@media (min-width: $breakpoint-middle)
+    .home__content
+        grid-template-columns: max-content 1fr 1fr!important
+
+    .home__data
+        grid-column: initial!important
+    
+    .home__blob
+        order: 1!important
+        justify-self: center!important
+
+    .about__container, .skills__container, .portfolio__content, .contact__container, .project__container, .footer__container
+        grid-template-columns: repeat(2, 1fr)!important
+
+    .services__container
+        gap: 1rem!important
+        grid-template-columns: repeat(3, 1fr)!important
+        justify-content: center!important
+
+    .qualification__section
+        display: grid!important
+        grid-template-columns: .6fr!important
+        justify-content: center!important
+
+
+//Medium-up Devices//
+@media (min-width: $breakpoint-middle-up)
+
+    body
+        margin: 0!important
+
+    .container
+        margin-left: auto!important
+        margin-right: auto!important
+
+    .section
+        padding: 6rem 0 2rem!important
+
+    .section__subtitle
+        margin-bottom: 4rem!important
+
+    .header
+        top: 0!important
+        bottom: initial!important
+
+    .header, .main, .footer__container
+        padding: 0 1rem!important
+
+    .nav
+        height: calc($height + 1.5rem)
+
+    .nav__icon, .nav__close, .nav__toggle
+        display: none
+
+    .nav__list
+        display: flex
+        column-gap: 2rem
+
+    .nav__menu
+        margin-left: auto
+    
+    .home__container
+        row-gap: 5rem!important
+
+    .home__content
+        padding-top: 5.5rem!important
+        column-gap: 2rem!important
+
+    .home__blob, .about__image, .skills__image, .portfolio__image
+        width: 240px!important
+
+    .about__container
+        column-gap: 5rem!important
+
+    .about__description
+        text-align: initial!important
+    
+    .about__info
+        justify-content: space-between!important
+
+    .about__button
+        justify-content: initial!important
+
+    .qualification__tabs
+        justify-content: center!important
+
+    .qualification__button
+        margin: 0 $mb-1!important
+
+    .services__icon
+        font-size: 2rem!important
+
+    .services__content
+        padding: 6rem 0 2rem 2.5rem!important
+
+    .services__modal-content
+        width: 450px!important
+
+    .services__button
+        font-size: $normal-font-size!important
+
+    .portfolio__content
+        align-items: center!important
+
+    .project-bg
+        border-radius: 1rem
+        margin: 0 2.5rem!important
+
+    .project__container
+        text-align: initial!important
+
+    .footer__bg
+        padding: 3rem 0 3.5rem!important
+
+    .footer__container
+        grid-template-columns: repeat(3, 1fr)!important
+
+    .footer__links
+        display: flex!important
+        flex-direction: row!important
+        column-gap: 1rem!important
+
+    .footer__copy
+        margin-bottom: -3rem!important
+
+
+//Large Devices//
+@media (min-width: $breakpoint-desktop)  
+    .header, .main, .footer__container
+        padding: 0!important
+
+    .home__blob
+        width: 260px!important
+
+    .home__social
+        padding: 2rem
+
+    .portfolio__content
+        row-gap: 5rem!important
+
+    .portfolio__image
+        width: 300px!important
+
+    .qualification__subtitle,.qualification__calendar
+        font-size: $normal-font-size!important
+
+    .qualification__icon
+        font-size: 2rem!important
+
+    .footer__subtitle
+        font-size: $normal-font-size!important
