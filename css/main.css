@@ -88,14 +88,24 @@ img {
 .scrollup {
   position: fixed;
   right: 1rem;
-  bottom: 5rem;
-  background-color: #ff1a1a;
-  opacity: .8;
+  bottom: -20%;
   border-radius: .4rem;
-  padding: 0 .3rem;
+  padding: 0 .5rem;
   z-index: 10;
   -webkit-transition: .4s;
   transition: .4s;
+  color: white;
+  background-color: #ff1a1a;
+  opacity: .8;
+}
+
+.scrollup:hover {
+  background-color: #6d6a7c;
+  color: white;
+}
+
+.show-scroll {
+  bottom: 5rem;
 }
 
 @use "toolkit/_toolbox" {}.button {
