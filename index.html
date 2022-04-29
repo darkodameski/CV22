@@ -157,7 +157,7 @@
 
             <div class="about__container container grid">
 
-                <img src="images/lap-top.avif" alt="" class="about__image">
+                <img src="images/lap_top.png" alt="" class="about__image">
 
                 <div class="about__data">
                     <p class="about__description">
@@ -513,7 +513,7 @@
         <h2 class="section__title">Portfolio</h2>
         <span class="section__subtitle">Most recent work</span>
 
-        <div class="portfolio__container container swiper-container">
+        <div class="portfolio__container container swiper mySwiper">
 
             <div class="swiper-wrapper">
                 <div class="portfolio__content grid swiper-slide">
@@ -552,19 +552,153 @@
                     </div>
                 </div>
 
-            </div>
+                <div class="portfolio__content grid swiper-slide">
+                    <img src="images/project_3.jpg" alt="portfolio__image" class="portfolio__image">
 
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+                    <div class="portfolio__data">
+                        <h3 class="portfolio__title">E-Commerce Modern Website</h3>
+                        <p class="portfolio__description">Responsive E-Commerce website adaptable to all devices</p>
+                        <a href="#" class="button button--flex button--small portfolio__button">
+                            Demo <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="portfolio__content grid swiper-slide">
+                    <img src="images/project_3.jpg" alt="portfolio__image" class="portfolio__image">
+
+                    <div class="portfolio__data">
+                        <h3 class="portfolio__title">E-Commerce Modern Website</h3>
+                        <p class="portfolio__description">Responsive E-Commerce website adaptable to all devices</p>
+                        <a href="#" class="button button--flex button--small portfolio__button">
+                            Demo <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="portfolio__content grid swiper-slide">
+                    <img src="images/project_3.jpg" alt="portfolio__image" class="portfolio__image">
+
+                    <div class="portfolio__data">
+                        <h3 class="portfolio__title">E-Commerce Modern Website</h3>
+                        <p class="portfolio__description">Responsive E-Commerce website adaptable to all devices</p>
+                        <a href="#" class="button button--flex button--small portfolio__button">
+                            Demo <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+               
+            </div> 
 
             <div class="swiper-pagination"></div>
-
+            
         </div>
     </section>
     <!--- Portfolio end -->
+
+    <!--- Project start -->
+    <section class="project section">
+        <div class="project-bg">
+            <div class="project__container container grid">
+                <div class="project__data">
+                    <h2 class="project__title">You have a new project?</h2>
+                    <p class="project__description">Contact me for your new project.</p>
+                    <a href="#contact" class="button button--flex button--white">
+                        Contact Me <i class="uil uil-message project__icon button__icon"></i>
+                    </a>
+                </div>
+
+                <img src="images/programmer_freelancer.png" alt="project__image" class="project__image">
+            </div>
+        </div>
+    </section>
+    <!--- Project end -->
+
+    <!--- Contact start -->
+    <section class="contact section" id="contact">
+        <h2 class="section__title">Contact Me</h2>
+        <span class="section__subtitle">Get in touch</span>
+
+        <div class="contact__container container grid">
+            <div>
+                <div class="contact_information">
+                    <i class="uil uil-phone contact__icon"></i>
+                
+
+                    <div class="contact_information">
+                        <h3 class="contact__title">Call Me</h3>
+                        <span class="contact__subtitle">075/979 848</span>
+                    </div>
+                </div>
+
+                <div class="contact_information">
+                    <i class="uil uil-envelopes contact__icon"></i>
+
+                    <div class="contact_information">
+                        <h3 class="contact__title">Email</h3>
+                        <span class="contact__subtitle">dameski.darko@gmail.com</span>
+                    </div>
+                </div>
+
+                <div class="contact_information">
+                    <i class="uil uil-location-pin-alt contact__icon"></i>
+
+                    <div class="contact_information">
+                        <h3 class="contact__title">Location</h3>
+                        <span class="contact__subtitle">Prilep - Macedonia</span>
+                    </div>
+                </div>
+            </div>
+
+            <form action="" class="contact__form grid">            
+                <div class="contact__input grid">
+                    <div class="contact__content">
+                        <label for="" class="contact__label">Name</label>
+                        <input type="text" class="contact__input">
+                    </div>
+
+                    <div class="contact__content">
+                        <label for="" class="contact__label">Email</label>
+                        <input type="email" class="contact__input">
+                    </div>
+
+                </div>
+
+                <div class="contact__content">
+                    <label for="" class="contact__label">Project</label>
+                    <input type="text" class="contact__input">
+                </div>
+
+                <div class="contact__content">
+                    <label for="" class="contact__label">Message</label>
+                    <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                </div>
+
+                <div>
+                    <a href="#" class="button button--flex">
+                        Send Message <i class="uil uil-message button__icon"></i>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!--- Contact end -->
     </main>
+
+    <footer class="footer">
+        <div class="footer_bg">
+            <div class="footer__container container grid">
+                <div>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="js/menu-toggle.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/pop-up.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>   
+
 </body>
 </html>
