@@ -122,6 +122,15 @@ img {
   color: #6d6a7c;
 }
 
+.button--white {
+  background-color: white;
+  color: #ff1a1a;
+}
+
+.button--white:hover {
+  background-color: white;
+}
+
 @use "toolkit/_toolbox" {}.header {
   width: 100%;
   position: fixed;
@@ -679,5 +688,92 @@ img {
 .portfolio__button:hover, button__icon {
   -webkit-transform: translateX(0.25rem);
           transform: translateX(0.25rem);
+}
+
+.swiper-slide {
+  height: auto;
+  cursor: pointer;
+  margin-bottom: 1.7rem;
+}
+
+.swiper-pagination-bullet {
+  background-color: #ff1a1a !important;
+}
+
+@use "toolkit/_toolbox" {}.project {
+  text-align: center;
+}
+
+.project-bg {
+  padding-top: 3rem;
+  background-color: #ff4d4d;
+}
+
+.project__title {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.project__description {
+  margin-bottom: 1.5rem;
+}
+
+.project__title, .project__description {
+  color: white;
+}
+
+.project__image {
+  width: 320px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+@use "toolkit/_toolbox" {}.contact__container {
+  row-gap: 3rem;
+}
+
+.contact__information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.contact__icon {
+  font-size: 2rem;
+  color: #ff1a1a;
+  margin-right: 0.75rem;
+}
+
+.contact__title {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.contact__subtitle {
+  font-size: 0.813rem;
+  color: #a19fad;
+}
+
+.contact__content {
+  padding: .75rem 1rem .25rem;
+  border-radius: .5rem;
+  background-color: #ff8080;
+}
+
+.contact__label {
+  font-size: 0.938rem;
+  color: #242329;
+}
+
+.contact__input {
+  width: 100%;
+  padding: .25rem .5rem .5rem 0;
+  font-size: 0.938rem;
+  background-color: #ff8080;
+  color: #6d6a7c;
+  border: none;
+  outline: none;
+  border-radius: .5rem;
 }
 /*# sourceMappingURL=main.css.map */
