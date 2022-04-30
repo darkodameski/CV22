@@ -130,6 +130,7 @@ img {
   font-weight: 500;
   color: white;
   background-color: #ff1a1a;
+  cursor: pointer;
 }
 
 .button:hover {
