@@ -123,7 +123,12 @@ img {
   background-color: #a19fad;
 }
 
-@use "toolkit/_toolbox" {}.button {
+@use "toolkit/_toolbox" {}button, button:active {
+  outline: none;
+  border: none;
+}
+
+.button {
   display: inline-block;
   padding: 1rem;
   border-radius: .5rem;
