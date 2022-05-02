@@ -184,7 +184,7 @@ img {
   background-color: white;
 }
 
-@use "toolkit/_toolbox" {}@media (max-width: 350px) {
+@use "toolkit/_toolbox" {}@media all and (max-width: 350px) {
   .container {
     margin-left: 1rem;
     margin-right: 1rem;
@@ -219,9 +219,12 @@ img {
   .services__modal {
     padding: 0 0.5rem !important;
   }
+  .button {
+    padding: .75rem .5rem;
+  }
 }
 
-@media (min-width: 568px) {
+@media all and (min-width: 568px) {
   .home__content {
     -ms-grid-columns: max-content 1fr 1fr !important;
         grid-template-columns: -webkit-max-content 1fr 1fr !important;
@@ -260,7 +263,7 @@ img {
   }
 }
 
-@media (min-width: 768px) {
+@media all and (min-width: 768px) {
   body {
     margin: 0 !important;
   }
@@ -380,7 +383,7 @@ img {
   }
 }
 
-@media (min-width: 1024px) {
+@media all and (min-width: 1024px) {
   .header, .main, .footer__container {
     padding: 0 !important;
   }

@@ -1,7 +1,7 @@
 @use "toolkit/_toolbox"
 
 //Small Devices//
-@media (max-width: $breakpoint-mobile)
+@media all and (max-width: $breakpoint-mobile)
     .container
         margin-left: $mb-1
         margin-right: $mb-1
@@ -31,12 +31,15 @@
     .services__modal
         padding: 0 .5rem!important
 
+    .button
+        padding: .75rem .5rem
+
 
 //Medium Devices//
-@media (min-width: $breakpoint-middle)
+@media all and (min-width: $breakpoint-middle)
     .home__content
         grid-template-columns: max-content 1fr 1fr!important
-
+        
     .home__data
         grid-column: initial!important
     
@@ -59,7 +62,7 @@
 
 
 //Medium-up Devices//
-@media (min-width: $breakpoint-middle-up)
+@media all and (min-width: $breakpoint-middle-up)
 
     body
         margin: 0!important
@@ -160,7 +163,7 @@
 
 
 //Large Devices//
-@media (min-width: $breakpoint-desktop)  
+@media all and (min-width: $breakpoint-desktop)  
     .header, .main, .footer__container
         padding: 0!important
 
